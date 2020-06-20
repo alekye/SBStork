@@ -38,10 +38,10 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>com.fizzed</groupId>
 				<artifactId>stork-maven-plugin</artifactId>
@@ -51,6 +51,12 @@
 						<id>stork-launcher</id>
 						<goals>
 							<goal>launcher</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>stork-assembly</id>
+						<goals>
+							<goal>assembly</goal>
 						</goals>
 					</execution>
 				</executions>
